@@ -57,6 +57,7 @@ ol li::marker {
 }
   
 /* Main Container */
+
 .main-container {
     max-width: 735px;
     background-color: #fff;
@@ -129,7 +130,6 @@ ol li::marker {
     gap: 20px;
     margin-bottom: 20px;
 }
-
 
 .ingredients ul {
     color: #827E7B;
@@ -226,3 +226,30 @@ ol li::marker {
 { 
     color: hsl(228, 45%, 44%); 
 }
+
+/* Mobile styles for 375px width */
+@media (max-width: 375px) {
+    body {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      background: none;
+    }
+  
+    .main-container {
+      padding: 30px;
+      width: 100%;
+      border-radius: 0;
+    }
+  
+    .heading img {
+      width: 100%;
+      padding: 0;
+      border-radius: 0;
+      display: block;
+    }
+
+    footer {
+        display: none;
+    }
+  }

@@ -12,19 +12,19 @@
 </head>
 <body>
   
-<main class="main-container">
+<main class="main-container" role="main">
 
-  <section class="heading">
+  <section class="heading" aria-labelledby="recipe-title">
     <img src="assets/images/image-omelette.jpeg" alt="Omelette">
 
-    <h1>Simple Omelette Recipe</h1>
+    <h1 id="recipe-title">Simple Omelette Recipe</h1>
 
     <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
     to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
   </section>
 
-  <section class="preparation-time">
-    <h3>Preparation time</h3>
+  <section class="preparation-time" aria-labelledby="prep-time">
+    <h3 id="prep-time">Preparation time</h3>
 
     <ul>
       <li><strong>Total:</strong> 10 minutes</li>
@@ -33,8 +33,8 @@
     </ul> 
   </section>
 
-  <section class="ingredients">
-    <h2>Ingredients</h2>
+  <section class="ingredients" aria-labelledby="ingredients-title">
+    <h2 id="ingredients-title">Ingredients</h2>
 
     <ul>
       <li>2-3 large eggs</li>
@@ -45,8 +45,8 @@
     </ul>
   </section>
 
-  <section class="instructions">
-    <h2>Instructions</h2>
+  <section class="instructions" aria-labelledby="instructions-title">
+    <h2 id="instructions-title">Instructions</h2>
 
     <ol>
       <li><strong>Beat the eggs:</strong> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
@@ -63,35 +63,39 @@
 
   </section>
 
-  <section class="nutrition">
-    <h2>Nutrition</h2>
+  <section class="nutrition" aria-labelledby="nutrition-title">
+    <h2 id="nutrition-title">Nutrition</h2>
 
     <p>
       The table below shows nutritional values per serving without the additional fillings.
     </p>
 
-    <table>
+    <table aria-label="Nutritional Information">
       <tr>
-        <td>Calories</td><td><strong>227kcal</strong></td>
+        <td>Calories</td>
+        <td><strong>227kcal</strong></td>
       </tr>
       <tr>
-        <td> Carbs</td><td><strong>0g</strong></td>
+        <td> Carbs</td>
+        <td><strong>0g</strong></td>
       </tr>
       <tr>
-        <td>Protein</td><td><strong>20g</strong></td>
+        <td>Protein</td>
+        <td><strong>20g</strong></td>
       </tr>
       <tr>
-        <td>Fat</td><td><strong>22g</strong></td>
+        <td>Fat</td>
+        <td><strong>22g</strong></td>
       </tr>
     </table>
 
   </section>
 </main>
 
-<footer>
+<footer role="contentinfo">
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">RainbowSurfer137</a>.
   </div>
 </footer>
 
